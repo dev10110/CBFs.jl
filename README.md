@@ -6,7 +6,7 @@
 
 
 
-A Julia library to help construct safety critical controllers using Control Barrier Functions. 
+A Julia library to help construct safety critical controllers using Control Barrier Functions. Analytic solutions to the QP are used (where possible) and therefore the computation is extremely lightweight.
 
 ## Installation
 
