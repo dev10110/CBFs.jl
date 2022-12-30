@@ -1,16 +1,16 @@
 """
-    cbf_qp(u0, h, Lfh, Lgh, α; P=I)
+    u = cbf_qp(u0, h, Lfh, Lgh, α; P=I)
 
 Returns the CBF QP control input, i.e. the result of
 
-# ```
-# \\begin{aligned}
-# \\min_{u \\in \\mathbb{R}^m} & \\frac{1}{2} (u - u_0)^T P (u - u_0)\\
-# s.t. & Lfh + Lgh u \\leq - \\alpha(h)
-# \\end{aligned}
-# ```
+```math
+\\begin{aligned}
+u = \\min_{u \\in \\mathbb{R}^m} \\quad & \\quad \\frac{1}{2} (u - u_0)^T P (u - u_0)\\\\
+\\quad \\quad s.t. \\quad & \\quad L_fh + L_gh u \\leq - \\alpha(h)
+\\end{aligned}
+```
 
-# # If `α<:Real`, we assume `α(r) = α r`
+If `α<:Real`, we assume `α(r) = α r`
 """
 function cbf_qp(u0, h, Lfh, Lgh, α::R; P=I) where {R <: Real}
 
