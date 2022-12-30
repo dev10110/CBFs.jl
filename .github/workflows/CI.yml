@@ -50,6 +50,6 @@ jobs:
       - run: |
           julia --project=docs -e '
             using Documenter: DocMeta, doctest
-            using CBFss
+            using CBFs
             DocMeta.setdocmeta!(CBFs, :DocTestSetup, :(using CBFs); recursive=true)
             doctest(CBFs)'
