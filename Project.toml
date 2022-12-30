@@ -3,6 +3,9 @@ uuid = "fd6b9d71-d509-4338-b72d-ab2a7f43025a"
 authors = ["Devansh Ramgopal Agrawal <devansh@umich.edu> and contributors"]
 version = "0.1.0"
 
+[deps]
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+
 [compat]
 julia = "1.6"
 
